@@ -36,9 +36,12 @@
             // 
             // exit_btn
             // 
-            exit_btn.Location = new Point(494, 366);
+            exit_btn.Image = (Image)resources.GetObject("exit_btn.Image");
+            exit_btn.ImageAlign = ContentAlignment.MiddleLeft;
+            exit_btn.Location = new Point(505, 334);
             exit_btn.Name = "exit_btn";
-            exit_btn.Size = new Size(206, 55);
+            exit_btn.Padding = new Padding(16, 0, 0, 0);
+            exit_btn.Size = new Size(206, 66);
             exit_btn.TabIndex = 1;
             exit_btn.Text = "Exit";
             exit_btn.UseVisualStyleBackColor = true;
@@ -46,7 +49,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(95, 198);
+            button1.Location = new Point(88, 199);
             button1.Name = "button1";
             button1.Size = new Size(155, 86);
             button1.TabIndex = 2;
@@ -56,9 +59,12 @@
             // 
             // exesync_btn
             // 
-            exesync_btn.Location = new Point(494, 253);
+            exesync_btn.Image = Properties.Resources.execute;
+            exesync_btn.ImageAlign = ContentAlignment.MiddleLeft;
+            exesync_btn.Location = new Point(505, 230);
             exesync_btn.Name = "exesync_btn";
-            exesync_btn.Size = new Size(206, 55);
+            exesync_btn.Padding = new Padding(16, 0, 0, 0);
+            exesync_btn.Size = new Size(206, 66);
             exesync_btn.TabIndex = 3;
             exesync_btn.Text = "Execute";
             exesync_btn.UseVisualStyleBackColor = true;
