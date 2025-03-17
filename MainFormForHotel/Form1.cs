@@ -14,6 +14,7 @@ namespace MainFormForHotel
         {
             InitializeComponent();
             //  InitializeTrayIcon();
+            datePickerRange1.Value = initdate();
         }
         private void InitializeTrayIcon()
         {
@@ -137,13 +138,40 @@ namespace MainFormForHotel
         private void exit_btn_Click(object sender, EventArgs e)
         {
             this.Close();
-            
+
         }
 
         private void exesync_btn_Click(object sender, EventArgs e)
         {
-             Dlt dlt = new Dlt();
-             dlt.SyncData();
+            exesync_btn.Enabled = false;
+
+            try
+            {
+                //Dlt dlt = new Dlt();
+                //dlt.SyncData();
+            }
+            catch { }
+            finally
+            {
+                exesync_btn.Enabled = true;
+            }
+
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+        public DateTime[] initdate()
+        {
+            return new DateTime[2] { DateTime.Now.AddDays(-1),
+          DateTime.Now.AddDays(-1) };
+        }
+
+        private void Form1_Activated(object sender, EventArgs e)
+        {
+            datePickerRange1.Value = initdate();
         }
     }
 }
