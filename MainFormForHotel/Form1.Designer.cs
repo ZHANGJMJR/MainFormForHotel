@@ -37,6 +37,7 @@
             textBox1 = new TextBox();
             start_btn = new Button();
             stop_btn = new Button();
+            button2 = new Button();
             SuspendLayout();
             // 
             // exit_btn
@@ -135,11 +136,22 @@
             stop_btn.Text = "Stop";
             stop_btn.UseVisualStyleBackColor = true;
             // 
+            // button2
+            // 
+            button2.Location = new Point(152, 244);
+            button2.Name = "button2";
+            button2.Size = new Size(139, 76);
+            button2.TabIndex = 11;
+            button2.Text = "button2";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click_1;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(774, 455);
+            Controls.Add(button2);
             Controls.Add(stop_btn);
             Controls.Add(start_btn);
             Controls.Add(textBox1);
@@ -166,5 +178,6 @@
         private TextBox textBox1;
         private Button stop_btn;
         private Button start_btn;
+        private Button button2;
     }
 }

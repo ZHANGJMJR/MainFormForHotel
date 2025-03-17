@@ -173,5 +173,10 @@ namespace MainFormForHotel
         {
             datePickerRange1.Value = initdate();
         }
+
+        private async  void button2_Click_1(object sender, EventArgs e)
+        {
+            await BrowserDownloader.GetStartedLink();
+        }
     }
 }
